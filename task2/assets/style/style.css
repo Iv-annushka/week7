@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container main .section2, .container main .section1, .container main .sale2, .container main .sale1 {
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.container aside li, header nav li {
+  list-style: none;
+  color: rgb(7, 7, 57);
+}
+.container aside a, header nav a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 750px;
+  }
+}
+@media screen and (max-width: 425px) {
+  body {
+    min-width: 375px;
+  }
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2em;
+}
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: flex-end;
+    margin-right: 2em;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    height: 10vh;
+    margin-right: 1em;
+  }
+}
+header .logo {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  margin: 0 1em;
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .logo {
+    justify-content: stretch;
+    margin: 0;
+  }
+}
+header .search {
+  display: flex;
+  margin: 0 1em;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header nav .navbar1 {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1em;
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar1 {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  header nav .navbar1 {
+    display: none;
+  }
+}
+header nav .navbar2 {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar2 {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  header nav .navbar2 {
+    display: none;
+  }
+}
+header nav .navbar3 {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar3 {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  header nav .navbar3 {
+    display: none;
+  }
+}
+header nav .navbar4 {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar4 {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  header nav .navbar4 {
+    display: none;
+  }
+}
+header .basket {
+  display: flex;
+  margin: 0 1em;
+}
+@media screen and (max-width: 768px) {
+  header .basket {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+header .person {
+  display: flex;
+  margin-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  header .person {
+    margin: 0;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 1fr);
+  margin-right: 2em;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-right: 2em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    margin-right: 1em;
+  }
+}
+.container main {
+  display: grid;
+  gap: 0.5em;
+  grid-area: 1/2/5/6;
+}
+.container main .sale1 {
+  display: grid;
+  grid-area: 1/2/2/4;
+  background: #BCE7F0;
+  font-size: 40px;
+  color: red;
+}
+@media screen and (max-width: 768px) {
+  .container main .sale1 {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container main .sale1 {
+    font-size: 30px;
+  }
+}
+.container main .sale2 {
+  display: grid;
+  grid-area: 2/2/3/4;
+  background: rgb(246, 201, 246);
+  font-size: 35px;
+  color: rgb(7, 7, 57);
+}
+@media screen and (max-width: 768px) {
+  .container main .sale2 {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container main .sale2 {
+    font-size: 30px;
+  }
+}
+.container main .girl1 {
+  display: grid;
+  grid-area: 1/4/3/5;
+  overflow: hidden;
+  border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .container main .girl1 {
+    display: none;
+  }
+}
+.container main .girl2 {
+  display: grid;
+  grid-area: 1/5/3/6;
+  overflow: hidden;
+  border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .container main .girl2 {
+    display: none;
+  }
+}
+.container main .girl3 {
+  display: grid;
+  grid-area: 3/2/5/3;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.container main .girl4 {
+  display: grid;
+  grid-area: 3/3/5/4;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.container main .girl {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container main .section1 {
+  display: grid;
+  grid-area: 3/4/4/6;
+  background: rgb(238, 239, 175);
+  font-size: 25px;
+  color: rgb(7, 7, 57);
+}
+@media screen and (max-width: 768px) {
+  .container main .section1 {
+    display: none;
+  }
+}
+.container main .section2 {
+  display: grid;
+  grid-area: 4/4/5/6;
+  font-size: 25px;
+  background: rgb(204, 239, 175);
+  color: rgb(7, 7, 57);
+}
+@media screen and (max-width: 768px) {
+  .container main .section2 {
+    display: none;
+  }
+}
+.container aside {
+  display: grid;
+  grid-area: 1/1/5/2;
+  margin-left: 2em;
+}
+@media screen and (max-width: 425px) {
+  .container aside {
+    margin-left: 1em;
+  }
+}
+.container aside .menu {
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .container aside .menu {
+    display: grid;
+    align-items: flex-start;
+  }
+}
+.container aside h2 {
+  display: grid;
+  grid-area: 1/1/2/2;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  .container aside h2 {
+    display: none;
+  }
+}
+.container aside .sidebar {
+  display: grid;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 425px) {
+  .container aside .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container aside .sidebar {
+    font-size: 1em;
+  }
+}
+.container aside ul {
+  display: grid;
+  grid-area: 2/1/4/2;
+  align-content: space-between;
+}
+.container aside nav {
+  display: grid;
+  grid-area: 2/1/4/2;
+  align-items: stretch;
+}
+.container aside .help {
+  display: grid;
+  grid-area: 4/1/5/2;
+  align-items: end;
+}/*# sourceMappingURL=style.css.map */

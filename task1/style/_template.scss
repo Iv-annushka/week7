@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%footer_section{
+    display: grid;
+    border: 1px solid;
+    background-color: white;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+%main_section{
+    display: grid;
+    border: 1px solid;
+    align-items: center;
+}
+// Подключить шрифты и шаблоны правил % через extend и миксины @mixin через include
